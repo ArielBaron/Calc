@@ -67,7 +67,7 @@ btnE.onclick = () => {
     let result = correctedSqrtEquation.replace(/x/g, "*").replace(/÷/g, "/").replace(/π/g, "Math.PI").replace(/e/g, "Math.E");
     result = result.replace(/\^/g, "**");
 
-    alert(result);
+    console.log(result);
     try {
         result = eval(result);
         EqutionLabel.textContent = result;
